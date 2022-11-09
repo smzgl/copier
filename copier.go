@@ -10,13 +10,6 @@ import (
 	"unicode"
 )
 
-var (
-	ErrInvalidCopyDestination = errors.New("copy destination is invalid")
-	ErrInvalidCopyFrom        = errors.New("copy from is invalid")
-	ErrMapKeyNotMatch         = errors.New("map's key type doesn't match")
-	ErrNotSupported           = errors.New("not supported")
-)
-
 // These flags define options for tag handling
 const (
 	// Denotes that a destination field must be copied to. If copying fails then a panic will ensue.
